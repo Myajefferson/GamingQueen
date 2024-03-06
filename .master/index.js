@@ -59,7 +59,12 @@
           }
         };
       },
-
+      getDistance: function(pointA,pointB){
+        const distanceX = pointB.x - pointA.x;
+        const distanceY = pointB.y - pointA.y;
+        const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+        return distance;
+      },
       /**
        * Using the Pythagorean Theorem, returns the distance in pixels between 
        * two points.
@@ -68,7 +73,7 @@
        * @param {Object} pointB: A point with properties x and y.
        * @return {Number}: The distance in pixels between pointA and pointB.
        */
-      getDistance(pointA, pointB) {
+      getDistance(pointA, pointB,x,y) {
         const
           distanceX = Math.abs(pointB.x - pointA.x),
           distanceY = Math.abs(pointB.y - pointA.y);
