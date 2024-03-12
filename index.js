@@ -68,7 +68,6 @@
         /**
          * Using the Pythagorean Theorem, returns the distance in pixels between 
          * two points.
-         * 
          * @param {Object} pointA: A point with properties x and y.
          * @param {Object} pointB: A point with properties x and y.
          * @return {Number}: The distance in pixels between pointA and pointB.
